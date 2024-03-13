@@ -37,13 +37,20 @@ def scrape_nikon_preview(category, driver):
 
 
 def scrape_camera_images(url, driver):
-    url = f"{BASE_URL}{url}"
     driver.get(url)
     wait_for_page_load(driver)
     page_source = driver.page_source
     soup = BeautifulSoup(page_source, 'html.parser')
-    images = soup.find_all('img')
-    image_urls = [image["src"] for image in images]
+    image_container = soup.find("ol", class_="carousel-inner")
+    images = image_container.find_all("img")
+    image_urls = []
+
+    for image in images:
+        if 'data-pend-src' in image.attrs:
+            image_urls.append(image['data-pend-src'])
+        else:
+            image_urls.append(image['src'])
+
     return image_urls
 
 
