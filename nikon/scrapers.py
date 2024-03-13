@@ -64,5 +64,5 @@ def scrape_cameras_specs(url, driver):
     for spec in specs:
         key = spec.find("h4", class_=["spec-title", "col-sm-6"])
         value = spec.find("div", class_=["specs col-sm-6"])
-        result.append({"spec": key, "value": value})
+        result.append({key.text: value.text})
     return result

@@ -2,7 +2,7 @@ from selenium import webdriver
 from mongo import nikon_collection
 import json
 
-from nikon.scrapers import scrape_nikon_preview, scrape_camera_images
+from nikon.scrapers import scrape_nikon_preview, scrape_camera_images, scrape_cameras_specs
 
 driver = webdriver.Chrome()
 
@@ -13,14 +13,15 @@ for category in categories:
     cameras.extend(cameras_preview)
 
 for camera in cameras:
-    camera["images"] = scrape_camera_images(camera["detailed_link"], driver)
+    camera['images'] = scrape_camera_images(camera["detailed_link"], driver)
+    camera['specs'] = scrape_cameras_specs(camera["detailed_link"], driver)
 driver.quit()
 
 
 def save_as_json():
-    for document in cameras:
+    for camera in cameras:
         with open('nikon_preview.json', 'a') as json_file:
-            json.dump(dict(document), json_file, indent=4)
+            json.dump(dict(camera), json_file, indent=4)
             json_file.write(",\n")
 
 
