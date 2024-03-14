@@ -12,7 +12,7 @@ chrome_options.add_argument("--disable-dev-shm-usage")
 driver = webdriver.Chrome(options=chrome_options)
 
 cameras = []
-categories = ["compact-digital-cameras", "dslr-cameras"]
+categories = ["compact-digital-cameras", "dslr-cameras", "mirrorless-cameras"]
 for category in categories:
     cameras_preview = scrape_nikon_preview(category, driver)
     cameras.extend(cameras_preview)
