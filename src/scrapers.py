@@ -2,8 +2,8 @@ from selenium.webdriver.common.by import By
 from selenium.webdriver.support.ui import Select
 from bs4 import BeautifulSoup
 
-from nikon.selenium_utils import wait_for_page_load
-from nikon.schemas import NikonPreview
+from selenium_utils import wait_for_page_load
+from schemas import NikonPreview, ImageURLS
 
 BASE_URL = "https://www.nikonusa.com"
 
@@ -31,7 +31,7 @@ def scrape_nikon_preview(category, driver):
             "detailed_link": url,
             "category": category,
         }
-        NikonPreview.parse_obj(camera_dict)
+        NikonPreview.parse_obj(camera_dict)  # validating
         validated_data.append(camera_dict)
     return validated_data
 
@@ -50,12 +50,12 @@ def scrape_camera_images(url, driver):
             image_urls.append(image['data-pend-src'])
         else:
             image_urls.append(image['src'])
-
+    ImageURLS.parse_obj({"images": image_urls})
     return image_urls
 
 
 def scrape_cameras_specs(url, driver):
-    driver.get(url+"#tab-ProductDetail-ProductTabs-TechSpecs")
+    driver.get(url + "#tab-ProductDetail-ProductTabs-TechSpecs")
     wait_for_page_load(driver)
     page_source = driver.page_source
     soup = BeautifulSoup(page_source, 'html.parser')

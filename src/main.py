@@ -1,13 +1,18 @@
 from selenium import webdriver
-from mongo import nikon_collection
+from selenium.webdriver.chrome.options import Options
 import json
 
-from nikon.scrapers import scrape_nikon_preview, scrape_camera_images, scrape_cameras_specs
+from scrapers import scrape_nikon_preview, scrape_camera_images, scrape_cameras_specs
 
-driver = webdriver.Chrome()
+chrome_options = Options()
+chrome_options.add_argument("--no-sandbox")
+chrome_options.add_argument("--headless")
+chrome_options.add_argument("--disable-dev-shm-usage")
+
+driver = webdriver.Chrome(options=chrome_options)
 
 cameras = []
-categories = ["compact-digital-cameras"]
+categories = ["compact-digital-cameras", "dslr-cameras"]
 for category in categories:
     cameras_preview = scrape_nikon_preview(category, driver)
     cameras.extend(cameras_preview)
