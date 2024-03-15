@@ -3,6 +3,7 @@ from selenium.webdriver.chrome.options import Options
 import json
 
 from scrapers import scrape_nikon_preview, scrape_camera_images, scrape_cameras_specs
+from chatgp import generate_description
 
 chrome_options = Options()
 chrome_options.add_argument("--no-sandbox")
@@ -21,6 +22,7 @@ for camera in cameras:
     camera["brand"] = "Nikon"
     camera['images'] = scrape_camera_images(camera["detailed_link"], driver)
     camera['specs'] = scrape_cameras_specs(camera["detailed_link"], driver)
+    camera["description"] = generate_description(camera)
 driver.quit()
 
 
