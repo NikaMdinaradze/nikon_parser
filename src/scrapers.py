@@ -26,7 +26,7 @@ def scrape_nikon_preview(category, driver):
     for camera in cameras:
         url = BASE_URL + camera.find('a', class_='product-detail-link')['href']
         camera_dict = {
-            "name": camera.find('span', itemprop='name').text.strip(),
+            "model": camera.find('span', itemprop='name').text.strip(),
             "price": camera.find('span', itemprop='price').text.strip(),
             "detailed_link": url,
             "category": category,

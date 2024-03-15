@@ -18,6 +18,7 @@ for category in categories:
     cameras.extend(cameras_preview)
 
 for camera in cameras:
+    camera["brand"] = "Nikon"
     camera['images'] = scrape_camera_images(camera["detailed_link"], driver)
     camera['specs'] = scrape_cameras_specs(camera["detailed_link"], driver)
 driver.quit()
