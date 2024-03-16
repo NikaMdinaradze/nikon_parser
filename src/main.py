@@ -4,6 +4,7 @@ import json
 
 from scrapers import scrape_nikon_preview, scrape_camera_images, scrape_cameras_specs
 from chatgp import generate_description
+from utils import save_unique_specifications, save_as_json
 
 chrome_options = Options()
 chrome_options.add_argument("--no-sandbox")
@@ -23,14 +24,10 @@ for camera in cameras:
     camera['images'] = scrape_camera_images(camera["detailed_link"], driver)
     camera['specs'] = scrape_cameras_specs(camera["detailed_link"], driver)
     camera["description"] = generate_description(camera)
+
+
+save_unique_specifications(cameras, driver)
 driver.quit()
 
 
-def save_as_json():
-    for camera in cameras:
-        with open('nikon_preview.json', 'a') as json_file:
-            json.dump(dict(camera), json_file, indent=4)
-            json_file.write(",\n")
-
-
-save_as_json()
+save_as_json(cameras)
