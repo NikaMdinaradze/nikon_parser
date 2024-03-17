@@ -1,149 +1,149 @@
-Viewfinder Frame Coverage
-Movie Video Compression
 Movie File Format
-Log Interval
-Charging Time
-Exposure Metering System
-Extended shutter speeds (mode M) 
-Shutter Type
-White Balance
-Reflex Mirror
-Sensor Size
-Approx. Dimensions (Width x Height x Depth)
-Image Sensor Format
-Monitor Type
+Frame Advance Rate
+Focus Lock
+Active D-Lighting Bracketing
+Exposure Control
+Movie Focus Peaking
+Exposure Metering
+Data Acquired 
+Pixel Shift Shooting 
+Operating Environment
+Supported GNS Systems
+Built-in Flash Control
 Movie
-Autofocus (AF) Focus-area Selection
-Playback Functions
-Viewfinder Magnification
+Movie Audio
+Monitor Type
+Track Logs 
+Lens Servo
+Digital Zoom
+Aperture
+Storage Media
+Reflex Mirror
+Viewfinder Frame Coverage
+Lens f/-number
+Monitor Frame Coverage (shooting mode)
+Battery Life (shots per charge)
+Storage File Formats
+Eye Sensor
+Focus Modes
 Movie Frame size (pixels) and frame rate (RAW Video) 
+AF for Movie
+Viewfinder Diopter Adjustment
+Viewfinder
+Mirror Lock Up
+Supported GNS Systems 
+Shutter Speed
+Active D-Lighting
+Movie ISO
+Time Code
+Approx. Dimensions (Width x Height x Depth)
+Movie Video Compression
+Peripheral Connector
+Maximum Autofocus Areas/Points
+Flash Sync Terminal
+Lens Mount
+Monitor Frame Coverage (playback mode)
+Top Continuous Shooting Speed at Full Resolution
+HDMI Output
+Built-in flash Range (approx.) (ISO sensitivity: Auto)
+Movie Active D-Lighting
+Battery Charger
+GPS
+Viewfinder Magnification
+Exposure Meter Coupling
+Multiple Exposure
+Clock Synchronization 
+Interface
+Charging Time
+Effective Pixels (Megapixels)
+Compatible Lenses
+Smart Device App Connectivity
+Flash Control
+Autofocus (AF)
+Battery / Batteries
+Flash Compensation
+Maximum Log Recording Time
+Metering Method
+Exposure Compensation
+Flash Sync Speed
+Power Sources
+Data Acquired
+Bluetooth
+Image Sensor Type
+Focus Range
+AF-Area Mode
 Extended shutter speeds (mode S) 
-Monitor Resolution
+Image Sensor Format
+Lens Focal Length
+Log Deletion
+Approx. Weight 
+Shutter
+White Balance Bracketing
+Autofocus System
+Focusing Screen
+Ethernet Connector
+Lens Zoom
+Metering Range
+Time-Lapse Movie
+ISO Sensitivity
+Continuous Shooting Options
+Exposure Metering System
 Movie Maximum Recording Time
 Exposure Lock
-Continuous Shooting Options
-Active D-Lighting Bracketing
-Wi-Fi Functionality
-Metering Range
-Monitor Frame Coverage (shooting mode)
-Movie Metering
-Monitor Size
-File System
-Lens Zoom
-Approx. Weight 
-Exposure Modes
-Data Acquired 
-GPS
-Scene Modes
-Flash Sync Terminal
-Movie Log Gamma Output
-Movie e-VR
-Active D-Lighting
-Storage File Formats
-Vibration Reduction
-Exposure Metering
-Focus Point
-File Format Still Images
-Log Interval 
-Compatible Lenses
-Movie Audio Recording Format
-Flash Control
-Frame Advance Rate
-Total Pixels
-Autofocus System
-Battery / Batteries
-Lens Focal Length
-Track Logs
-Built-in Flash Control
-AF-Area Mode
-Lens Construction
-Flash Sync Speed
-Top Continuous Shooting Speeds
-Maximum Log Recording Time 
-Operating Environment
-Smart Device App Connectivity
-Dust-Reduction System
-Type
-HDMI Output
-Track Logs 
-Interface
-Supported GNS Systems
-Built-in Flash
-Maximum Log Recording Time
-Viewfinder Eyepoint
-Lens Servo
-Top Continuous Shooting Speed at Full Resolution
-Image Area (pixels)
-Approx. Weight
-Data Acquired
-Movie Metering 
-Image Sensor Type
-Digital Zoom
-Lens Aperture
-Lens f/-number
 Voice Memo Function
-Lens 
-Mirror Lock Up
-Pixel Shift Shooting 
-Movie ISO
-Peripheral Connector
-Aperture
-Supported Languages
-Viewfinder Diopter Adjustment
-Movie Highlight Display (Zebras)
-Tripod Socket
-Autofocus (AF)
-Movie Focus Peaking
-Eye Sensor
-Multiple Exposure
-Log Deletion 
-Battery Life (shots per charge)
-Maximum Autofocus Areas/Points
-Storage File System
-Effective Pixels
-Supported GNS Systems 
-Movie HDMI Output
-Focusing Screen
-Picture Control
-Shutter Speed
-Ethernet 
-Shutter
-Viewfinder
-Exposure Meter Coupling
-Image Sensor
-Image Size (pixels)
-Movie Active D-Lighting
+Movie Audio Recording Format
 Clock Synchronization
-Time Code
-Accessory Shoe
-Time-Lapse Movie
-Metering Method
-Monitor Frame Coverage (playback mode)
-Power Sources
-Movie Audio
-Battery Charger
-Clock Synchronization 
-Flash-ready Indicator
-Flash Compensation
-Lens Mount
+Movie Log Gamma Output
 AC Adapter
-Log Deletion
-Ethernet Connector
-Effective Pixels (Megapixels)
-Flash Sync Modes
-Focus Range
-Storage Media
+Lens 
+Top Continuous Shooting Speeds
+White Balance
+Built-in Flash
+Log Interval 
+Shutter Type
+Image Sensor
 Self-Timer
-ISO Sensitivity
+Image Size (pixels)
+Extended shutter speeds (mode M) 
+Storage File System
+Total Pixels
+Vibration Reduction
+Effective Pixels
+Autofocus (AF) Focus-area Selection
+Movie Metering
 Nikon Creative Lighting System (CLS)
-AF for Movie
-Exposure Compensation
-Card Slot
-Battery Life (shots per charge) 
-Exposure Control
+Movie Highlight Display (Zebras)
 Detection Range
-Focus Modes
-Bluetooth
-Focus Lock
-Built-in flash Range (approx.) (ISO sensitivity: Auto)
-White Balance Bracketing
+Movie HDMI Output
+Flash-ready Indicator
+Log Deletion 
+File System
+Scene Modes
+Monitor Size
+Sensor Size
+Maximum Log Recording Time 
+Movie e-VR
+Lens Aperture
+Track Logs
+Approx. Weight
+Exposure Modes
+Wi-Fi Functionality
+Tripod Socket
+Supported Languages
+Image Area (pixels)
+Movie Metering 
+Picture Control
+Monitor Resolution
+Focus Point
+Ethernet 
+Lens Construction
+Playback Functions
+Log Interval
+Flash Sync Modes
+Card Slot
+Dust-Reduction System
+File Format Still Images
+Battery Life (shots per charge) 
+Accessory Shoe
+Viewfinder Eyepoint
+Type

@@ -1,10 +1,10 @@
 from selenium import webdriver
 from selenium.webdriver.chrome.options import Options
-import json
 
 from scrapers import scrape_nikon_preview, scrape_camera_images, scrape_cameras_specs
 from chatgp import generate_description
-from utils import save_unique_specifications, save_as_json
+from utils import save_unique_specifications
+from mongo import collection
 
 chrome_options = Options()
 chrome_options.add_argument("--no-sandbox")
@@ -25,9 +25,6 @@ for camera in cameras:
     camera['specs'] = scrape_cameras_specs(camera["detailed_link"], driver)
     camera["description"] = generate_description(camera)
 
-
-save_unique_specifications(cameras, driver)
 driver.quit()
 
-
-save_as_json(cameras)
+collection.insert_many(cameras)
