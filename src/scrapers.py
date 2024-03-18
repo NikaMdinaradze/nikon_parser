@@ -60,9 +60,9 @@ def scrape_cameras_specs(url, driver):
     page_source = driver.page_source
     soup = BeautifulSoup(page_source, 'html.parser')
     specs = soup.find_all("li", class_=["spec-content", "row"])
-    result = []
+    result = {}
     for spec in specs:
         key = spec.find("h4", class_=["spec-title", "col-sm-6"])
         value = spec.find("div", class_=["specs col-sm-6"])
-        result.append({key.text: value.text})
+        result[key.text] = value.text
     return result
