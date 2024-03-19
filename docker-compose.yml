@@ -23,7 +23,6 @@ services:
       - env/.env.dev
     volumes:
       - ./src:/app
-    command: python main.py
 
 
 volumes:
