@@ -2,7 +2,7 @@ from selenium import webdriver
 from selenium.webdriver.chrome.options import Options
 
 from scrapers import scrape_nikon_preview, scrape_camera_images, scrape_cameras_specs
-from chatgp import generate_description
+from chatgpt import generate_description
 from utils import save_unique_specifications
 from mongo import collection
 
